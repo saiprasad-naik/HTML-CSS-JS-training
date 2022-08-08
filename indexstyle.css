@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'poppins', sans-serif;
 }
 
 section{
@@ -11,13 +14,214 @@ section{
 
 .sidebar{
     width: 20%;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    position: fixed;
 }
 
 .main{
     width: 80%;
-    background-color: grey;
+}
+
+.dpholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em auto 0 auto;
 }
 
 .dp{
-    width: 5em;
+    width: 8em;
+    border: 7px solid #363636;
+    border-radius: 50%;
+
+}
+
+.sidebar h2{
+    text-align: center;
+    margin: .5em;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: .7em;
+    margin: 1em auto;
+}
+
+.socials i{
+    text-align: center;
+    background: #363636; 
+    padding: .6em;
+    width: 2.3em;
+    border-radius: 50%;
+    color: white;
+}
+
+.nav{
+    margin: 3em 0 2em 2em;
+}
+
+.nav-links{
+    margin: 2em auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-links i{
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+    width: 1.7em;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+    font-size: 1rem;
+}
+
+.footer{
+    text-align: center;
+    position: relative;
+    top: 3.8em;
+}
+
+.copyright{
+    font-size: .9rem;
+    font-weight: 1;
+    margin: 0em auto .2em auto;
+}
+
+.end{
+    font-size: .7rem;
+}
+
+.name{
+    color: rgb(69, 165, 255);
+   
+}
+
+.main{
+    width: 80%;
+    margin-left: 20%;
+}
+
+.banner{
+    background:
+    linear-gradient(45deg,
+      rgba(0,0,0, 0.6),
+      rgba(0,0,0, 0.6)), url('./images/bg.png');
+    height: 100vh;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white
+}
+
+.banner-name{
+    font-size: 3.5rem;
+    padding: 4.5em 0 0 3em;
+    font-weight: bold;
+}
+
+.banner-designation{
+    font-size: 2rem;
+    padding: 0 0 0 5.2em;
+}
+
+.banner-span{
+    color: yellow;
+    font-weight: bolder;
+}
+
+.abt-section{
+    padding: 1em;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(37, 37, 89);
+}
+
+.sub-heading{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(37, 37, 89);
+}
+
+.heading1{
+    padding: 2em 0 0 0;
+}
+
+.underline{
+    width: 4em;
+    height: .2em;
+    background-color: yellow;
+    margin: 1em 0 1.5em 0;
+}
+
+.abt-section p{
+    padding: 0 4em .3em 0;
+}
+
+#aboutcontent{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+
+.aboutpic{
+    width: 30%;
+}
+
+.aboutpic img{
+    width: 100%;
+}
+
+.about-info{
+    width: 68% ;
+}
+
+.about-subinfo{
+    width: 95%;
+}
+
+.about-subinfo1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.arrow{
+    color:rgb(37, 37, 89) ;
+    font-size: 1.5rem;
+}
+
+.sub-heading{
+    padding-bottom: .3em;
+}
+
+.sub-headings{
+    font-weight: 600;
+    padding-right: .5em;
+    
+}
+
+.about-subinfo1 p{
+    width: 50%;
+    padding: .5em 0 0 0;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.additional-about-info{
+    margin-top: 1.5em;
+    width: 100%;
 }

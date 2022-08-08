@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    
     <title>Saiprasad Naik - Portfolio</title>
 </head>
 <body>
@@ -13,7 +14,10 @@
 
         <div class="sidebar">
             
-            <img src="./images/my pic 2.jpeg.png" alt="" class="dp">
+            <div class="dpholder">
+                <img src="./images/my pic 2.jpeg" alt="" class="dp">
+            </div>
+            
            
             <h2>Saiprasad Naik</h2>
             
@@ -26,40 +30,87 @@
             </div>
 
             <div class="nav">
-                <div class="home">
+                <div class="nav-links home">
                     <i class="fa-solid fa-house"></i>
                     <a href="">Home</a>
                 </div>
-                <div class="about">
+                <div class="nav-links about">
                     <i class="fa-solid fa-user"></i>
-                    <a href="">About</a>
+                    <a href="#aboutcontent">About</a>
                 </div>
-                <div class="resume">
+                <div class="nav-links resume">
                     <i class="fa-solid fa-file"></i>
                     <a href="">Resume</a>
                 </div>
-                <div class="portfolio">
+                <div class="nav-links portfolio">
                     <i class="fa-solid fa-book-open"></i>
                     <a href="">Portfolio</a>
                 </div>
-                <div class="services">
+                <div class="nav-links services">
                     <i class="fa-solid fa-server"></i>
                     <a href="">Services</a>
                 </div>
-                <div class="contact">
+                <div class="nav-links contact">
                     <i class="fa-solid fa-envelope"></i>
                     <a href="">Contact</a>
                 </div>  
             </div>
 
             <div class="footer">
-                &copy; Copyright 
-                <p>Designed by Saiprasad Naik!</p>
+                 <p class="copyright">&copy;Copyright</p>
+                <p class="end"> Designed by <span class="name">Saiprasad Naik!</span></p>
             </div>
 
         </div>
 
         <div class="main"> 
+            <div class="banner">
+                <p class="banner-name"><span class="banner-span">Hello,<br></span>I'm Saiprasad Naik</p>
+                <p class="banner-designation">A web developer!</p>
+            </div>
+
+            <div class="abt-section">
+                <h5 class="heading heading1">About</h5>
+                <div class="underline"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora ducimus magnam ullam, laboriosam nam quo!</p>
+
+                <div id="aboutcontent">
+                    
+                    <div class="aboutpic">
+                        <img src="./images/about-pic.jpeg" alt="">
+                    </div>
+                    
+                    <div class="about-info">
+                        <h5 class="sub-heading">UI/UX Designer and Web Developer.</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quas.</p>
+                        
+                        <div class="about-subinfo">
+                            
+                            <div class="about-subinfo1">
+                                <p><span class="arrow">> </span><span class="sub-headings">Birthday: </span>11 May 2001</p>
+                                <p><span class="arrow">> </span><span class="sub-headings">Age: </span>20</p>
+                            </div>
+                            <div class="about-subinfo1">
+                                <p><span class="arrow">> </span><span class="sub-headings">Website: </span>www.example.com</p>
+                                <p><span class="arrow">> </span><span class="sub-headings">Degree: </span>BSc. Computer Science</p>
+                            </div>
+                            <div class="about-subinfo1">
+                                <p><span class="arrow">> </span><span class="sub-headings">Phone: </span>8625912707</p>
+                                <p><span class="arrow">> </span><span class="sub-headings">Email</span>: </span>saiprasadnaikpersonal11@gmail.com</p>
+                            </div>
+                            <div class="about-subinfo1">
+                                <p><span class="arrow">> </span><span class="sub-headings">City: </span>Margao, Goa</p>
+                                <p><span class="arrow">> </span><span class="sub-headings">Employment: </span>Working</p>
+                            </div>
+                           
+                            
+                        </div>
+                        <p class="additional-about-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt iusto sit, iste nostrum cumque odio laudantium corporis alias voluptate? Iure voluptatem totam illo officiis vero. Cum, sunt pariatur aliquam numquam placeat sed iusto qui laborum temporibus tenetur ducimus at possimus fugit cumque nostrum, amet sit velit, maiores saepe omnis.</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
 
         </div>
 
