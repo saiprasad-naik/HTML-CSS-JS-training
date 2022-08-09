@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="indexstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
-    
     <title>Saiprasad Naik - Portfolio</title>
 </head>
 <body>
@@ -30,11 +30,19 @@
             </div>
 
             <div class="nav">
-                <div class="nav-links home">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="">Home</a>
-                </div>
-                <div class="nav-links about">
+
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa-solid nav-icons fa-user"></i>About</a></li>
+                    <li><a href="#resume"><i class="fa-solid nav-icons fa-file"></i>Resume</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid nav-icons fa-book-open"></i>Portfolio</a></li>
+                    <li><a href="#services"><i class="fa-solid nav-icons fa-server"></i>Services</a></li>
+                    <li><a href="#"><i class="fa-solid nav-icons fa-envelope"></i>Contact</a></li>
+                </ul>
+                <!-- <div class="nav-links home">
+                    <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                </div> -->
+                <!-- <div class="nav-links about">
                     <i class="fa-solid fa-user"></i>
                     <a href="#aboutcontent">About</a>
                 </div>
@@ -53,7 +61,7 @@
                 <div class="nav-links contact">
                     <i class="fa-solid fa-envelope"></i>
                     <a href="">Contact</a>
-                </div>  
+                </div>   -->
             </div>
 
             <div class="footer">
@@ -69,18 +77,20 @@
                 <p class="banner-designation">A web developer!</p>
             </div>
 
+            <div id="about"></div>
+
             <div class="abt-section">
                 <h5 class="heading heading1">About</h5>
                 <div class="underline"></div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora ducimus magnam ullam, laboriosam nam quo!</p>
+                <p class="headingp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora ducimus magnam ullam, laboriosam nam quo!</p>
 
                 <div id="aboutcontent">
                     
-                    <div class="aboutpic">
+                    <div  class="aboutpic" data-aos="fade-right">
                         <img src="./images/about-pic.jpeg" alt="">
                     </div>
                     
-                    <div class="about-info">
+                    <div class="about-info" data-aos="fade-left">
                         <h5 class="sub-heading">UI/UX Designer and Web Developer.</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quas.</p>
                         
@@ -88,7 +98,7 @@
                             
                             <div class="about-subinfo1">
                                 <p><span class="arrow">> </span><span class="sub-headings">Birthday: </span>11 May 2001</p>
-                                <p><span class="arrow">> </span><span class="sub-headings">Age: </span>20</p>
+                                <p><span class="arrow">> </span><span class="sub-headings">Age: </span>21</p>
                             </div>
                             <div class="about-subinfo1">
                                 <p><span class="arrow">> </span><span class="sub-headings">Website: </span>www.example.com</p>
@@ -112,8 +122,313 @@
                 
             </div>
 
+            <div class="facts">
+                <h5 class="heading heading2">Facts</h5>
+                <div class="underline"></div>
+                <p class="headingp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora ducimus magnam ullam, laboriosam nam quo!</p>
+
+                        <div class="numbers">
+                        <div class="numbers">
+                <div class="facts-items" data-aos="fade-up">
+                    <div class="facts-items1" >
+                        <i class="fa-regular fa-face-smile"></i>
+                        <div class="numbers">
+                            <h1>200</h1>
+                            <p><span class="facts-items-info">Happy Clients </span>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="facts-items1">
+                        <i class="fa-solid fa-book"></i>
+                        <div class="numbers">
+                            <h1>300</h1>
+                            <p><span class="facts-items-info">Projects </span>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="facts-items1">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="numbers">
+                            <h1>1200</h1>
+                            <p><span class="facts-items-info">Hours Of Support </span>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="facts-items1">
+                        <i class="fa-solid fa-user-group"></i>
+                        <div class="numbers">
+                            <h1>20</h1>
+                            <p><span class="facts-items-info">Hard Workers </span>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
         </div>
 
+        </div>
+
+        <div class="skills">
+            <h5 class="heading heading2">Skills</h5>
+            <div class="underline"></div>
+            <p class="headingp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora ducimus magnam ullam, laboriosam n4
+            
+            <div class="skills-tabs">
+                
+                <div class="skill-tabs-flex">
+                    
+                    <div class="tab1">
+                        <div class="tab-words">
+                            <p>HTML</p>
+                            <p>100%</p>
+                        </div>
+                        <div class="progress-bar html"></div>
+                    </div>
+
+                    <div class="tab1">
+                        <div class="tab-words">
+                            <p>CSS</p>
+                            <p>95%</p>
+                        </div>
+                        <div class="progress-bar-main">
+                            <div class="progress-bar1"></div>
+                            <div class="progress-bar2 css"></div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="skill-tabs-flex" >
+                    
+                    <div class="tab1">
+                        <div class="tab-words">
+                            <p>JavaScript</p>
+                            <p>50%</p>
+                        </div>
+                        <div class="progress-bar-main">
+                            <div class="progress-bar1"></div>
+                            <div class="progress-bar2 js"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab1">
+                        <div class="tab-words">
+                            <p>Python</p>
+                            <p>40%</p>
+                        </div>
+                        <div class="progress-bar-main">
+                            <div class="progress-bar1"></div>
+                            <div class="progress-bar2 py"></div>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+        </div>
+
+        <div id="resume"></div>
+
+        <div class="resume">
+            <h5 class="heading heading2">Resume</h5>
+            <div class="underline"></div>
+            <p class="headingp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora ducimus magnam ullam, laboriosam n4
+
+            <div class="resume-col resume-col1">
+                <h3 class="resume-subheading1">Summary</h3>
+                <div class="icon">
+                    <i class="fa-regular fa-circle"></i>
+                    <div class=" left-border resume-info">
+                        <h4 class="resume-subheading2">Saiprasad Naik</h4>
+                        <p><i>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</i></p>
+                        <ul>
+                            <li>Madel-Pequeno, Margao Goa</li>
+                            <li>+91 8625912707</li>
+                            <li>saiprasadnaikpersonal11@gmail.com</li>
+                        </ul>
+                    </div>
+    
+                </div>
+              
+                <div class="icon">
+                    <i class="fa-regular fa-circle"></i>
+                    <h3 class="resum-subheading1">Education</h3>
+                </div>
+
+                <h4 class="resume-subheading2">HSSC</h4>        
+                <p>2017-2019</p>
+                <p class="institute"><i>Presentation Convent Hr. Sec.</i></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas perspiciatis accusantium vitae libero! Est dolores officiis sunt qui, porro pariatur.</p>
+                <h4 class="resume-subheading2">Bsc Computer Science</h4>        
+                <p>2019-2022</p>
+                <p class="institute"><i>Parvatibai Chowgule College</i></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas perspiciatis accusantium vitae libero! Est dolores officiis sunt qui, porro pariatur.</p>
+
+
+
+            </div>
+        </div>
+        
+        <div id="portfolio"></div>
+        <div class="portfolio">
+            <h5 class="heading heading2">Portfolio</h5>
+            <div class="underline"></div>
+            <p class="headingp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, id?  ducimus magnam ullam, laboriosam n4</p>
+            
+            <div class="portfolio-categories" data-aos="fade-up">
+                <ul>
+                    <li>ALL</li>
+                    <li>APP</li>
+                    <li>CARD</li>
+                    <li>WEB</li>
+                </ul>
+            </div>
+
+            <div class="portfolio-images-main" data-aos="fade-up">
+                <div class="portfolio-images">
+                    <img src="./images/Insight GOa.png" alt="" data-aos="fade-up">
+                    <img src="./images/Screenshot (8).png" alt="" data-aos="fade-up">
+                    <img src="./images/Insight GOa.png" alt="" data-aos="fade-up">
+                    <img src="./images/Screenshot (8).png" alt="" data-aos="fade-up">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="services"></div>
+
+        <div class="services">
+            <h5 class="heading heading2">Services</h5>
+            <div class="underline"></div>
+            <p class="headingp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, id?  ducimus magnam ullam, laboriosam n4</p>
+
+            <div class="services-list">
+                <div class="services-list-individual" data-aos="fade-up">
+                    <i class="fa-solid fa-suitcase fa-solid-services "></i>
+                    <div class="services-list-info">
+                        <h6>Lorem, ipsum.</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam vero praesentium iusto consequatur. Excepturi.</p>
+                    </div>
+                </div>
+                <div class="services-list-individual" data-aos="fade-up">
+                    <i class="fa-solid fa-list-check fa-solid-services"></i>
+                    <div class="services-list-info">
+                        <h6>Lorem, ipsum.</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam vero praesentium iusto consequatur. Excepturi.</p>
+                    </div>
+                </div>
+                <div class="services-list-individual" data-aos="fade-up">
+                    <i class="fa-solid fa-chart-simple fa-solid-services"></i>
+                    <div class="services-list-info">
+                        <h6>Lorem, ipsum.</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam vero praesentium iusto consequatur. Excepturi.</p>
+                    </div>
+                </div>
+                <div class="services-list-individual" data-aos="fade-up">
+                    <i class="fa-solid fa-binoculars fa-solid-services"></i>
+                    <div class="services-list-info">
+                        <h6>Lorem, ipsum.</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam vero praesentium iusto consequatur. Excepturi.</p>
+                    </div>
+                </div>
+                <div class="services-list-individual" data-aos="fade-up">
+                    <i class="fa-solid fa-sun fa-solid-services"></i>
+                    <div class="services-list-info ">
+                        <h6>Lorem, ipsum.</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam vero praesentium iusto consequatur. Excepturi.</p>
+                    </div>
+                </div>
+                <div class="services-list-individual" data-aos="fade-up">
+                    <i class="fa-solid fa-calendar-days fa-solid-services"></i>
+                    <div class="services-list-info">
+                        <h6>Lorem, ipsum.</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam vero praesentium iusto consequatur. Excepturi.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="testimonials"></div>
+
+        <div class="testimonials">
+            <h5 class="heading heading2">Testimonials</h5>
+            <div class="underline"></div>
+            <p class="headingp"></p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, id?  ducimus magnam ullam, laboriosam n4</p>
+
+        </div>
+
+        <div id="contact"></div>
+
+        <div class="contact">
+            <h5 class="heading heading2">Contact</h5>
+            <div class="underline"></div>
+            <p class="headingp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, id?  ducimus magnam ullam, laboriosam n4</p>
+            <div class="contact-rows">
+                <div class="contact-col contact-col1">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="contact-info">
+                            <h4>Location: </h4>
+                            <p>Madel-Pequeno, Margao Goa</p>
+                        </div>
+                    </div>
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="contact-info">
+                            <h4>Email: </h4>
+                            <p>saiprasadnaikpersonal11@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div class="contact-info">
+                            <h4>Call: </h4>
+                            <p>825912707</p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30789.396110678474!2d73.96917457000357!3d15.285535869616986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb3e651007787%3A0x17665ce1d538c84a!2sMargao%2C%20Goa!5e0!3m2!1sen!2sin!4v1660039137862!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class=" contact-col contact-col2">
+                    <form action="">
+                        <div class="form-inputs">
+                            <label for="name">Your Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-inputs">
+                            <label for="email">Your Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="form-inputs subject">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="subject-input">
+                        </div>
+                        <div class="form-inputs subject">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button>Send Message</button>
+                    </form>
+                    
+                </div>
+            </div>
+       
+
+        </div>
+
+
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+        AOS.init({
+            offset: 200,
+            duration: 800
+        }
+        );
+    </script>
 </body>
 </html>

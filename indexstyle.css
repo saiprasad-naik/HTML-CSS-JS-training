@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,9 +19,10 @@ section{
 .sidebar{
     width: 20%;
     color: white;
-    background-color: black;
+    background-color: rgb(11, 11, 24);
     height: 100vh;
     position: fixed;
+    z-index: 1;
 }
 
 .main{
@@ -33,9 +38,9 @@ section{
 
 .dp{
     width: 8em;
-    border: 7px solid #363636;
+    border: 7px solid rgba(96, 96, 113, 0.708);
     border-radius: 50%;
-
+    box-shadow: 1px 1px 8px 1px #919191;
 }
 
 .sidebar h2{
@@ -48,24 +53,56 @@ section{
 .socials{
     display: flex;
     justify-content: center;
-    gap: .7em;
+    gap: .8em;
     margin: 1em auto;
 }
 
 .socials i{
     text-align: center;
-    background: #363636; 
+    background: rgba(96, 96, 113, 0.708);
     padding: .6em;
     width: 2.3em;
     border-radius: 50%;
     color: white;
+    box-shadow: 1px 1px 8px 1px #919191;
+}
+
+.socials i:hover{
+    cursor: pointer;
+    background: rgba(171, 171, 244, 0.708);
+    box-shadow: 1px 1px 8px 1px #fbfbfb;
 }
 
 .nav{
     margin: 3em 0 2em 2em;
 }
 
-.nav-links{
+.nav i{
+    width: 1.7em;
+}
+
+.nav ul{
+    list-style: none;
+}
+
+.nav li{
+    padding-bottom: 2em;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(124, 124, 146);
+}
+
+li a:hover{
+    color: white;
+}
+
+.nav-icons{
+    padding-right: .5em;
+}
+
+/* .nav-links{
     margin: 2em auto;
     display: flex;
     justify-content: flex-start;
@@ -84,10 +121,17 @@ section{
     font-size: 1rem;
 }
 
+.nav-links a:hover{
+    color: yellow;
+}
+.nav-links a i:hover{
+    color: yellow;
+} */
+
 .footer{
     text-align: center;
     position: relative;
-    top: 3.8em;
+    top: 2.1em;
 }
 
 .copyright{
@@ -102,7 +146,7 @@ section{
 
 .name{
     color: rgb(69, 165, 255);
-   
+
 }
 
 .main{
@@ -156,7 +200,7 @@ section{
 }
 
 .heading1{
-    padding: 2em 0 0 0;
+    padding: 1.5em 0 0 0;
 }
 
 .underline{
@@ -166,7 +210,7 @@ section{
     margin: 1em 0 1.5em 0;
 }
 
-.abt-section p{
+.abt-section p, .facts p{
     padding: 0 4em .3em 0;
 }
 
@@ -175,14 +219,17 @@ section{
     width: 100%;
     justify-content: space-between;
     margin-top: 1.5em;
+    margin-bottom: 5.5em;
 }
 
 .aboutpic{
     width: 30%;
+
 }
 
 .aboutpic img{
     width: 100%;
+    animation: expand .8s ease forwards;
 }
 
 .about-info{
@@ -210,7 +257,7 @@ section{
 .sub-headings{
     font-weight: 600;
     padding-right: .5em;
-    
+
 }
 
 .about-subinfo1 p{
@@ -224,4 +271,341 @@ section{
 .additional-about-info{
     margin-top: 1.5em;
     width: 100%;
+}
+
+.facts, .skills, .resume, .portfolio, .contact, .services, .testimonials{
+    padding: 1em;
+}
+
+.facts-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 3em auto;
+}
+
+.facts-items1{
+    display: flex;
+    align-items: start;
+    gap: 1em;
+}
+
+.facts-items1 i{
+    font-size: 2.5rem;
+    color: rgb(37, 37, 89);
+    padding-top: .35em;
+}
+
+.numbers{
+    align-self: start;
+    font-size: .82rem;
+}
+
+.numbers h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.numbers p{
+    font-weight: lighter;
+    color: rgba(37, 37, 89, 0.601);
+}
+
+.facts-items-info{
+    font-weight: bold;
+    color: rgb(37, 37, 89);
+}
+
+.skills, .testimonials{
+    width: 100%;
+    background-color: rgba(99, 99, 255, 0.238);
+    padding-bottom: 5em;
+}
+
+.skills h5, .portfolio h5, .resume h5, .services h5, .testimonials h5, .contact h5{
+    padding-top: 1.5em;
+}
+
+.skills-tabs{
+    width: 100%;
+    padding-top: 1em;
+}
+
+.tab1{
+    width: 49%;
+}
+
+.skill-tabs-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5em;
+}
+
+.tab-words{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.tab-words{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.progress-bar1{
+    width: 100%;
+    height: .7em;
+    background-color:rgb(37, 37, 89) ;
+    display: flex;
+}
+
+.progress-bar-main, .progress-bar{
+    width: 100%;
+    height: .7em;
+    background-color:rgb(37, 37, 89) ;
+    display: flex;
+    margin-top: .5em;
+}
+
+.css{
+    width: 5%;
+    background-color: rgb(251, 251, 251) ;
+}
+
+.js{
+    width: 100%;
+    background-color: rgb(251, 251, 251) ;
+}
+
+.py{
+    width: 120%;
+    background-color: rgb(251, 251, 251) ;
+}
+
+.resume{
+    margin: 1em auto;
+}
+
+.icon{
+    display: flex;
+    align-items: flex-start;
+    gap: .7em;
+
+}
+
+.left-border{
+    border-left: 2px solid rgb(37, 37, 89);
+}
+
+.fa-circle, .fa-solid-services{
+    margin-top: .2em;
+}
+
+.resume-subheading1{
+    font-size: 1.5rem;
+    margin: .5em auto;
+}
+
+.resume-col{
+    margin: 2em auto;
+}
+
+.resume-subheading2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-bottom: .5em;
+}
+
+.portfolio{
+    width: 100%;
+    background-color: rgba(99, 99, 255, 0.238);
+}
+
+.headingp{
+    width: 95%;
+}
+
+.portfolio-categories{
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+    width: 17em;
+    background-color: white;
+    padding: .5em .5em;
+    border-radius: 20px;
+}
+
+.portfolio-categories ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.portfolio-categories li:hover{
+    color: rgb(37, 37, 89);
+    cursor: pointer;
+}
+
+/* .portfolio-images{
+    width: 90%;
+} */
+
+.portfolio-images{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 4em;
+}
+
+.portfolio-images img{
+    max-width: 500px;
+    padding: 1em 1em .5em 0;
+}
+
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2em auto;
+    gap: 2em;
+}
+
+.services-list-individual{
+    display: flex;
+    align-items: flex-start;
+    max-width: 350px;
+    gap: 1em;
+}
+
+.fa-solid-services{
+    color: white;
+    font-size: 1.7rem;
+    background-color: rgb(37, 37, 89);
+    padding: .5em;
+    border-radius: 50%;
+}
+
+.services-list h6{
+    font-size: 1.1rem;
+    padding-bottom: .7em;
+}
+
+.services-list p{
+    font-size: .85rem;
+    line-height: 1.5em;
+}
+
+.contact-rows{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-col{
+    padding: 1.8em;
+    margin: 2em 0 5em 0;
+    box-shadow: rgba(50, 52, 54, 0.179) 0px 8px 30px;
+}
+
+.contact-col1{
+    width: 40%;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+.map iframe{
+    max-height: 20em;
+    margin-top: 1em;
+}
+
+.contact-icon{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.contact-icon i{
+    font-size: 1.1em;
+    width: 2.5em;
+    text-align: center;
+    background-color: rgb(37, 37, 89) ;
+    color: white;
+    padding: .8em;
+    border-radius: 50%;
+}
+
+.contact-info h4{
+    font-size: 1.3rem;
+    font-weight: 510;
+}
+
+.contact-info p{
+    font-size: .9rem;
+    color: rgba(37, 37, 89, 0.753);
+    padding-top: .1em;
+}
+
+.contact-col2{
+    width: 58%;
+}
+
+form{
+    padding: 1em 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    width:48%;
+    
+}
+
+.subject{
+    width: 100%;
+}
+
+label{
+    padding: .4em 0 .8em 0;
+    color:rgba(34, 34, 69, 0.816);
+}
+
+input{
+    max-width: 28em;
+    padding: .58em;
+}
+
+textarea{
+    padding: .55em;
+}
+
+.subject-input{
+    max-width: 100%;
+}
+
+button{
+    width: 100%;
+    justify-self: center;
+    font-size: 1.02rem;
+    border: none;
+    background-color: rgb(37, 37, 89);
+    color: white;
+    padding: 0.7em 1.2em;
+    border-radius: 5px;
 }
