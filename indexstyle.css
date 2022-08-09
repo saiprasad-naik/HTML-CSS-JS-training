@@ -11,6 +11,10 @@ html{
     font-family:'poppins', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 section{
     width: 100%;
     display: flex;
@@ -450,7 +454,12 @@ li a:hover{
 }
 
 .portfolio-categories li:hover{
-    color: rgb(37, 37, 89);
+    color: rgb(130, 130, 255);
+    cursor: pointer;
+}
+
+.portfolio-categories li:active{
+    color: rgb(130, 130, 255);
     cursor: pointer;
 }
 
@@ -513,7 +522,7 @@ li a:hover{
 .contact-col{
     padding: 1.8em;
     margin: 2em 0 5em 0;
-    box-shadow: rgba(50, 52, 54, 0.179) 0px 8px 30px;
+    box-shadow: rgba(50, 52, 54, 0.134) 0px 8px 30px;
 }
 
 .contact-col1{
@@ -526,7 +535,7 @@ li a:hover{
 }
 
 .map iframe{
-    max-height: 20em;
+    max-height: 18.5em;
     margin-top: 1em;
 }
 
@@ -599,13 +608,23 @@ textarea{
     max-width: 100%;
 }
 
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+}
+
 button{
-    width: 100%;
-    justify-self: center;
     font-size: 1.02rem;
     border: none;
     background-color: rgb(37, 37, 89);
     color: white;
     padding: 0.7em 1.2em;
     border-radius: 5px;
+}
+
+button:hover{
+    background-color: white;
+    border: 2px solid rgb(37, 37, 89) ;
+    color: rgb(37, 37, 89);
 }

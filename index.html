@@ -37,7 +37,7 @@
                     <li><a href="#resume"><i class="fa-solid nav-icons fa-file"></i>Resume</a></li>
                     <li><a href="#portfolio"><i class="fa-solid nav-icons fa-book-open"></i>Portfolio</a></li>
                     <li><a href="#services"><i class="fa-solid nav-icons fa-server"></i>Services</a></li>
-                    <li><a href="#"><i class="fa-solid nav-icons fa-envelope"></i>Contact</a></li>
+                    <li><a href="#contact"><i class="fa-solid nav-icons fa-envelope"></i>Contact</a></li>
                 </ul>
                 <!-- <div class="nav-links home">
                     <a href="#"><i class="fa-solid fa-house"></i>Home</a>
@@ -366,7 +366,7 @@
             <div class="underline"></div>
             <p class="headingp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, id?  ducimus magnam ullam, laboriosam n4</p>
             <div class="contact-rows">
-                <div class="contact-col contact-col1">
+                <div class="contact-col contact-col1" data-aos="fade-zoom-in">
                     <div class="contact-icon">
                         <i class="fa-solid fa-location-dot"></i>
                         <div class="contact-info">
@@ -393,7 +393,7 @@
                     </div>
                 </div>
                 
-                <div class=" contact-col contact-col2">
+                <div class=" contact-col contact-col2" data-aos="fade-zoom-in">
                     <form action="">
                         <div class="form-inputs">
                             <label for="name">Your Name</label>
@@ -411,9 +411,11 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="" cols="30" rows="10"></textarea>
                         </div>
-                        <button>Send Message</button>
+                        
                     </form>
-                    
+                    <div class="contact-btn">
+                        <button>Send Message</button>
+                    </div>
                 </div>
             </div>
        
@@ -426,9 +428,11 @@
   <script>
         AOS.init({
             offset: 200,
-            duration: 800
+            duration: 1000
         }
         );
     </script>
+
+
 </body>
 </html>
