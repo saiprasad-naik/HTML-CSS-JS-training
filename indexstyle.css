@@ -322,7 +322,7 @@ li a:hover{
 
 .skills, .testimonials{
     width: 100%;
-    background-color: rgba(99, 99, 255, 0.238);
+    background-color: rgba(190, 190, 253, 0.238);
     padding-bottom: 5em;
 }
 
@@ -393,31 +393,63 @@ li a:hover{
 }
 
 .resume{
-    margin: 1em auto;
+    margin: 0 auto 2em auto;
 }
 
-.icon{
+.resume-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-col{
+    width: 48%;
+    margin: 1.5em 0;
+}
+
+.icon1{
     display: flex;
     align-items: flex-start;
     gap: .7em;
-
-}
-
-.left-border{
     border-left: 2px solid rgb(37, 37, 89);
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-.fa-circle, .fa-solid-services{
+.fa-circle{
+    position: relative;
+    left: -.4em;
+    bottom: -.3em;
+}
+
+.resume-info{
+    position: relative;
+    top: -1.3em;
+    padding-left: 1.2em;
+}
+
+.sub-p{
+    font-size: .9rem;
+}
+
+.resume-info ul{
+    padding-left: 1.5em; 
+}
+
+.exp-list{
+    margin-top: .6em;
+}
+
+.resume-info ul li{
+    padding-top: .6em ;
+}
+
+.fa-solid-services{
     margin-top: .2em;
 }
 
 .resume-subheading1{
     font-size: 1.5rem;
     margin: .5em auto;
-}
-
-.resume-col{
-    margin: 2em auto;
 }
 
 .resume-subheading2{
@@ -427,9 +459,22 @@ li a:hover{
     padding-bottom: .5em;
 }
 
+.edu-term{
+    background-color: rgba(190, 190, 253, 0.238);
+    max-width: 100px;
+    padding: .3em;
+    font-size: .9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.institute{
+    padding: .7em 0 1em 0;
+}
+
 .portfolio{
     width: 100%;
-    background-color: rgba(99, 99, 255, 0.238);
+    background-color: rgba(190, 190, 253, 0.238);
 }
 
 .headingp{
