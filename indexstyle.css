@@ -13,6 +13,7 @@ html{
 
 body{
     overflow-x: hidden;
+    position: relative;
 }
 
 section{
@@ -23,21 +24,27 @@ section{
 
 /* ---------------------------------------------------------sidebar-section----------------------------------------------------------------- */
 
-
-.sidebar{
+.side-column{
     width: 20%;
-    color: white;
-    background-color: rgb(11, 11, 24);
-    height: 100vh;
+    margin: 0;
     position: fixed;
     z-index: 1;
+}
+
+.sidebar{
+    width: 100%;
+    color: white;
+    background-color: rgb(11, 11, 24);
+    height: 93vh;
+    padding-top: 2em;
+    /* position: fixed; */
 }
 
 .dpholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.5em auto 0 auto;
+    padding: 2em auto 0 auto;
 }
 
 .dp{
@@ -106,42 +113,19 @@ li a:hover{
     padding-right: .5em;
 }
 
-/* .nav-links{
-    margin: 2em auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.nav-links i{
-    text-decoration: none;
-    color: rgb(151, 151, 151);
-    width: 1.7em;
-}
-
-.nav-links a{
-    text-decoration: none;
-    color: rgb(151, 151, 151);
-    font-size: 1rem;
-}
-
-.nav-links a:hover{
-    color: yellow;
-}
-.nav-links a i:hover{
-    color: yellow;
-} */
-
 .footer{
+    background-color: rgb(11, 11, 24);
+    height: 7vh;
+    width: 100%;
+    color: white;
     text-align: center;
-    position: relative;
-    top: 2.1em;
+    
 }
 
 .copyright{
     font-size: .9rem;
     font-weight: 1;
-    margin: 0em auto .2em auto;
+    /* margin: 0em auto .2em auto; */
 }
 
 .end{
@@ -158,8 +142,8 @@ li a:hover{
 
 
 .main{
-    width: 80%;
-    margin-left: 20%;
+    width: 100%;
+    padding-left: 20%;
 }
 
 
@@ -704,4 +688,221 @@ button:hover{
     background-color: white;
     border: 2px solid rgb(37, 37, 89) ;
     color: rgb(37, 37, 89);
+}
+
+.footer1{
+    visibility: hidden ;
+    width: 100%;
+    background-color: rgb(11, 11, 24);
+    color: white;
+    text-align: center;
+    padding: 1.2em;
+}
+
+.copyright1{
+    font-size: .9rem;
+}
+
+.end1{
+    font-size: .8rem;
+}
+
+#top{
+    
+}
+
+.screen-menu{
+    position: fixed;
+    top: 4em;
+    right: 4em;
+}
+
+#top-btn{
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    color: white;
+    background-color:rgb(37, 37, 89);
+    padding: 1em;
+    border-radius: 50%;
+    text-align: center;
+    font-size: .8rem;
+    z-index: 99;
+}
+
+.screen-menu-btn{
+    visibility: hidden;
+    position: absolute;
+    color: white;
+    background-color:rgb(37, 37, 89);
+    padding: .8em;
+    border-radius: 50%;
+    text-align: center;
+    width: 3.2em;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 770px) {
+
+
+    .side-column{
+        visibility: hidden;
+        position: fixed;
+        width: 40%;
+        height: 100%;
+    }
+
+    .sidebar{
+        height: 100vh;
+    }
+
+    .footer{
+        visibility: hidden;
+    }
+
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .main{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .banner-name{
+        font-size: 2rem;
+        padding: 7.5em 0 0 7em;
+    }
+    
+    .banner-designation{
+        font-size: 1.8rem;
+        padding: 0 0 0 7.8em;
+    }
+
+    .abt-section p, .facts p{
+        padding: 0 0 .3em 0;
+    }
+
+    #aboutcontent{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .aboutpic{
+        width: 85%;   
+    }
+
+    .about-info{
+        width: 98% ;
+    }
+
+    .about-subinfo1{
+        flex-direction: column;
+    }
+    
+    .abt-section, .facts, .skills, .resume, .portfolio, .contact, .services, .testimonials{
+        padding: 2em;
+    }
+
+    .facts-items{
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .facts-items1{
+        width: 300px;
+    }
+
+    .facts-tablet-pad{
+        padding-top: 4em;
+    }
+
+    .skill-tabs-flex{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .tab1{
+        width: 100%;
+    }
+
+    .tablet-skills-pad{
+        padding-top: 1.5em;
+    }
+
+    .tablet-skills-pad-bottom{
+        padding-bottom: 4em;
+    }
+
+    .skills h5, .portfolio h5, .resume h5, .services h5, .testimonials h5, .contact h5{
+        padding-top: .8em;
+    }
+
+    .resume-flex{
+       flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .resume-col{
+        width: 100%;
+        margin: .9em 0;
+    }
+
+    .tablet-resume-pad{
+        margin-top: 0;
+    }
+
+    .resume .headingp{
+        margin-bottom: 1.2em;
+    }
+
+    .headingp{
+        margin: 0;
+    }
+
+    .portfolio-images{
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .portfolio-images img{
+        max-width: 340px;
+        padding: 0;
+    }
+
+    .services-list-individual{
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 330px;
+        gap: 1em;
+    }
+
+    .contact-rows{
+        flex-direction: column;
+    }
+
+    .map iframe{
+        max-width: 100%;
+    }
+
+    .contact-col{
+        width: 100%;
+        margin: 2em 0 1em 0;
+    }
+
+    .contact-col2{
+        margin-bottom: 6em;
+    }
+
+    .footer1{
+        visibility: visible;
+    }
+    
 }
