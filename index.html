@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="indexstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <title>Saiprasad Naik - Portfolio</title>
@@ -13,13 +13,12 @@
     
         <a href="#" id="top-btn"><i class="fa-solid fa-arrow-up "></i></a>    
 
-    <div class="screen-menu">
-        <a href="#" class="screen-menu-btn"><i class="fa-solid fa-bars"></i></a>    
-    </div>
+        <a href="#" id="screen-menu-btn" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>    
+
     <section>
 
 <!-- ---------------------------------------------------------sidebar-section-----------------------------------------------------------------  -->
-        <div class="side-column">
+        <div id="side-column">
             <div class="sidebar">
             
                 <div class="dpholder">
@@ -371,6 +370,8 @@
                     <img src="./images/Screenshot (8).png" alt="" data-aos="fade-up">
                     <img src="./images/Insight GOa.png" alt="" data-aos="fade-up">
                     <img src="./images/Screenshot (8).png" alt="" data-aos="fade-up">
+                    <img src="./images/Insight GOa.png" alt="" data-aos="fade-up">
+                    <img src="./images/Screenshot (8).png" alt="" data-aos="fade-up">
                 </div>
                 
             </div>
@@ -516,13 +517,13 @@
 
     
 
-<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // AOS.init({
-        //     offset: 200,
-        //     duration: 1000
-        // }
-        // );
+        AOS.init({
+        offset: 200,
+        duration: 1000
+        }
+    );
     </script>
 
     <script>
@@ -539,6 +540,24 @@
                 mybutton.style.display = "none";
             }
         }
+
+        
+        
+
+        function myFunction() {
+            var menu_btn = document.getElementById("screen-menu-btn");
+            var menu = document.getElementById("side-column")
+                if (menu.style.display == "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+
+                menu_btn.innerHTML = "X";
+                menu_btn.style.textDecoration = "none";
+                }
+           
+        
 
     </script>
 

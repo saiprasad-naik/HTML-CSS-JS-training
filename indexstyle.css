@@ -24,11 +24,12 @@ section{
 
 /* ---------------------------------------------------------sidebar-section----------------------------------------------------------------- */
 
-.side-column{
+#side-column{
     width: 20%;
     margin: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 50;
+    display: block;
 }
 
 .sidebar{
@@ -159,11 +160,11 @@ li a:hover{
       rgba(0,0,0, 0.6),
       rgba(0,0,0, 0.6)), url('./images/bg.png');
     height: 100vh;
-    background-position: fixed;
+    background-position: top right 9%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white
+    color: white;
 }
 
 .banner-name{
@@ -223,11 +224,12 @@ li a:hover{
     justify-content: space-between;
     margin-top: 1.5em;
     margin-bottom: 5.5em;
+    overflow-x: hidden;
 }
 
 .aboutpic{
     width: 30%;
-
+    overflow-x: hidden;
 }
 
 .aboutpic img{
@@ -237,6 +239,7 @@ li a:hover{
 
 .about-info{
     width: 68% ;
+    overflow-x: hidden;
 }
 
 .about-subinfo{
@@ -350,12 +353,14 @@ li a:hover{
 
 .tab1{
     width: 49%;
+    overflow-x: hidden;
 }
 
 .skill-tabs-flex{
     display: flex;
     justify-content: space-between;
     padding-top: 1.5em;
+    overflow-x: hidden;
 }
 
 .tab-words{
@@ -530,13 +535,13 @@ li a:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-bottom: 4em;
 }
 
 .portfolio-images img{
-    max-width: 500px;
-    padding: 1em 1em .5em 0;
+    width: 350px;
+    padding: 1em .2em .5em 0;
 }
 
 
@@ -729,16 +734,25 @@ button:hover{
     font-size: .8rem;
 }
 
-.screen-menu{
-    position: fixed;
-    top: 4em;
-    right: 4em;
-}
-
 #top-btn{
     position: fixed;
-    bottom: 3em;
-    right: 3em;
+    bottom: 2em;
+    right: 2em;
+    color: white;
+    display: none;
+    width: 3em;
+    background-color:rgb(37, 37, 89);
+    padding: .8em;
+    border-radius: 50%;
+    text-align: center;
+    font-size: .8rem;
+    z-index: 0;
+}
+
+#screen-menu-btn{
+    position: fixed;
+    top: 2em;
+    right: 2em;
     color: white;
     width: 3em;
     background-color:rgb(37, 37, 89);
@@ -746,36 +760,46 @@ button:hover{
     border-radius: 50%;
     text-align: center;
     font-size: .8rem;
-    z-index: 99;
+    z-index: 0;
+    display: none;
 }
 
-.screen-menu-btn{
-    visibility: hidden;
-    position: absolute;
-    color: white;
-    background-color:rgb(37, 37, 89);
-    padding: .8em;
-    border-radius: 50%;
-    text-align: center;
-    width: 3.2em;
-    font-size: .8rem;
+@media screen and (max-width: 1300px){
+    #side-column{
+        display: none;
+        width: 40%;
+        height: 100%;
+    }
+    .main{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .portfolio-images img{
+        width: 300px;
+        padding: 1em .2em .5em 0;
+    }
+
+    #screen-menu-btn{
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 850px) {
 
 
-    .side-column{
-        visibility: hidden;
+    #side-column {
         position: fixed;
         width: 40%;
         height: 100%;
     }
 
-    .sidebar{
+    .sidebar {
         height: 100vh;
     }
 
-    .footer{
+    .footer {
         visibility: hidden;
     }
 
@@ -852,8 +876,8 @@ button:hover{
     }
 
     .portfolio-images img{
-        max-width: 340px;
-        padding: 0;
+        width: 340px;
+        padding: 1em .2em .5em 0;
     }
 
     .services-list-individual{
@@ -889,8 +913,22 @@ button:hover{
 
 @media screen and (max-width: 700px) {
 
+    section{
+        width: 100%;
+    }
+
+    #side-column {
+        position: fixed;
+        width: 80%;
+        height: 100%;
+    }
+
     .abt-section, .facts, .skills, .resume, .portfolio, .contact, .services, .testimonials{
         padding: 1em;
+    }
+
+    .banner{
+        overflow-x: hidden;
     }
 
     .banner-name{
@@ -905,6 +943,10 @@ button:hover{
 
     .aboutpic{
         width: 100%;   
+    }
+
+    .about-info{
+        overflow-x: hidden;
     }
 
     .abt-section p, .facts p{
@@ -951,7 +993,7 @@ button:hover{
     }
 
     .portfolio-images{
-        justify-content: space-between;
+        justify-content: center;
         gap: 1em;
     }
 
@@ -976,4 +1018,5 @@ button:hover{
     }
 
 }
+
 
