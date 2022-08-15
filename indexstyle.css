@@ -749,7 +749,7 @@ button:hover{
     z-index: 0;
 }
 
-#screen-menu-btn{
+#screen-menu-btn, #screen-menu-btn1{
     position: fixed;
     top: 2em;
     right: 2em;

@@ -13,7 +13,8 @@
     
         <a href="#" id="top-btn"><i class="fa-solid fa-arrow-up "></i></a>    
 
-        <a href="#" id="screen-menu-btn" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>    
+        <a href="#" id="screen-menu-btn" onclick="showmenu()"><i class="fa-solid fa-bars"></i></a>    
+        <a href="#" id="screen-menu-btn1" onclick="hidemenu()"><i class="fa-solid fa-bars"></i></a> 
 
     <section>
 
@@ -530,7 +531,6 @@
 
         var mybutton = document.getElementById("top-btn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
@@ -541,23 +541,21 @@
             }
         }
 
-        
-        
-
-        function myFunction() {
+        function showmenu() {
             var menu_btn = document.getElementById("screen-menu-btn");
+            var hide_menu_button = document.getElementById("screen-menu-btn1");
             var menu = document.getElementById("side-column")
                 if (menu.style.display == "block") {
+                    hide_menu_button.style.display = "block"
                     menu.style.display = "none";
                 } else {
+                    hide_menu_button.style.display = "none"
                     menu.style.display = "block";
                 }
 
-                menu_btn.innerHTML = "X";
-                menu_btn.style.textDecoration = "none";
-                }
-           
-        
+                
+
+
 
     </script>
 
