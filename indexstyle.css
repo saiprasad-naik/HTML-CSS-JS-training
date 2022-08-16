@@ -195,6 +195,8 @@ li a:hover{
     font-size: 2rem;
     font-weight: 600;
     color: rgb(37, 37, 89);
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .sub-heading{
@@ -433,6 +435,7 @@ li a:hover{
     display: flex;
     align-items: flex-start;
     gap: .7em;
+    width: 100%;
     border-left: 2px solid rgb(37, 37, 89);
     padding-bottom: 0;
     margin-bottom: 0;
@@ -460,6 +463,7 @@ li a:hover{
 
 .exp-list{
     margin-top: .6em;
+    width: 100%;
 }
 
 .resume-info ul li{
@@ -588,6 +592,58 @@ li a:hover{
     border: 1px solid rgb(37, 37, 89);
     color: rgb(37, 37, 89);
     transition: 1s;
+}
+
+
+/* ---------------------------------------------------------testimonial-section----------------------------------------------------------------- */
+
+.testimonial-container{
+    margin: 2em 1em;
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-container-main{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.individual-testimonial{
+    padding: 1.5em;
+    box-shadow: rgba(50, 52, 54, 0.134) 0px 8px 30px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+.individual-testimonial-message p{
+    text-align: center;
+    color: rgba(10, 10, 20, 0.603);
+}
+.individual-testimonial-message p i{
+    font-size: 1.5rem;
+    color: rgb(37, 37, 89);
+    padding: 0 .5em;
+}
+
+.testimonial-pic{
+    margin: 1.4em 0;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial-name{
+    font-weight: bold;
+}
+
+.testimonial-designation{
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(37, 37, 89, 0.601);
 }
 
 
@@ -887,6 +943,14 @@ button:hover{
         gap: 1em;
     }
 
+    .testimonial-container-main{
+        width: 600px;
+    }
+
+    .individual-testimonial{
+        width: 100%;
+    }
+
     .contact-rows{
         flex-direction: column;
         overflow: hidden;
@@ -915,6 +979,7 @@ button:hover{
 
     section{
         width: 100%;
+        overflow-x: hidden;
     }
 
     #side-column {
@@ -982,6 +1047,14 @@ button:hover{
     .resume-col{
         width: 100%;
         margin: .9em 0;
+    }
+
+    .resume-info{
+        width: 100%;
+    }
+
+    .resume-info li{
+        word-wrap: break-word;
     }
 
     .tablet-resume-pad{
