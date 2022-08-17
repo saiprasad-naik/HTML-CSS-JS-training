@@ -221,6 +221,7 @@ p{
     list-style: none;
     text-align: center;
     display: none;
+    position: absolute;
 }
 
 .dropdown li{
