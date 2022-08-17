@@ -161,7 +161,7 @@ li a:hover{
     background:
     linear-gradient(45deg,
       rgba(0,0,0, 0.6),
-      rgba(0,0,0, 0.6)), url('./images/bg.png');
+      rgba(0,0,0, 0.6)), url('../images/bg.png');
     height: 100vh;
     background-position: top right 9%;
     background-size: cover;
