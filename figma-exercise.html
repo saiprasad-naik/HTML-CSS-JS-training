@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <link rel="stylesheet" href="./css/figma-style.css">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
 </head>
 <body>
     <h1>Mastering CSS flexbox layout</h1>
@@ -14,31 +14,31 @@
     <p>Card Layout</p>
     <section class="container">
         <div class="card">
-
+            <p>A</p>
         </div>
         <div class="card">
-            
+            <p>B</p>
         </div>
         <div class="card">
-            
+            <p>C</p>
         </div>
         <div class="card">
-            
+            <p>D</p>
         </div>
         <div class="card">
-            
+            <p>E</p>
         </div>
         <div class="card">
-            
+            <p>F</p>
         </div>
         <div class="card">
-            
+            <p>G</p>
         </div>
         <div class="card">
-            
+            <p>H</p>
         </div>
         <div class="card">
-            
+            <p>I</p>
         </div>
     </section>
 
@@ -119,8 +119,20 @@
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contacts</a></li>
             </div>
-            <a href="#" id="screen-menu-btn" onclick="showmenu()"><i class="fa-solid fa-bars"></i></a>    
+            <div class="hamburger-menu" onclick="show_dropdown()">
+                <i class="fa-solid fa-barss" >///</i>
+            </div>
+            <div class="close-menu" onclick="close_dropdown()">
+                <i class="fa-solid fa-xmarkk" >X</i>
+            </div>
+            
         </ul>
+        <div class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+        </div>
         <div class="banner">
             <div class="banner-content">
                 <p class="banner-name"><span class="banner-span">Hello,<br></span>I'm Saiprasad Naik</p>
@@ -128,5 +140,23 @@
             </div>
         </div>
     </section>
+
+    <script>
+        var menu = document.querySelector(".hamburger-menu");
+        var close_menu = document.querySelectorAll(".close-menu")
+        var dropdown = document.querySelector(".dropdown");
+
+        function show_dropdown(){
+            dropdown.style.display = "block";
+            menu.style.display = "none";
+            close_menu.style.display = "block"
+        }
+
+        function close_dropdown(){
+            menu.style.display = "block";
+            dropdown.style.display = "none";
+            close_menu.style.display = "none"
+        }
+    </script>
 </body>
 </html>
