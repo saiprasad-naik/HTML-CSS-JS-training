@@ -227,7 +227,7 @@ p{
     color: white;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 770px){
     .nav ul{
         flex-direction: column;
         align-items: center;
