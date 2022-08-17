@@ -22,6 +22,7 @@ section{
 }
 
 
+
 /* ---------------------------------------------------------sidebar-section----------------------------------------------------------------- */
 
 #side-column{
@@ -30,6 +31,7 @@ section{
     position: fixed;
     z-index: 50;
     display: block;
+
 }
 
 .sidebar{
@@ -38,6 +40,7 @@ section{
     background-color: rgb(11, 11, 24);
     height: 93vh;
     padding-top: 2em;
+    height: 100vh;
     /* position: fixed; */
 }
 
@@ -253,19 +256,26 @@ li a:hover{
     justify-content: flex-start;
 }
 
+.about-subinfo1 p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .3em;
+}
+
+.fa-angle-right{
+    font-size: 1rem;
+    margin-bottom: .99em;
+}
+
 .arrow{
     color:rgb(37, 37, 89) ;
     font-size: 1.5rem;
 }
 
-.sub-heading{
-    padding-bottom: .3em;
-}
-
 .sub-headings{
     font-weight: 600;
     padding-right: .5em;
-
 }
 
 .about-subinfo1 p{
@@ -543,9 +553,35 @@ li a:hover{
     padding-bottom: 4em;
 }
 
-.portfolio-images img{
-    width: 380px;
-    padding: 1em .2em .5em 0;
+.individual-portfolio-images{
+    position: relative;
+    padding: 1em .2em 0 0;
+}
+
+.image-menu{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color: rgb(165, 165, 255);
+    padding: .5em;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.image-menu i{
+    cursor: pointer;
+}
+
+.individual-portfolio-images:hover img{
+    opacity: 0.5;
+}
+
+.individual-portfolio-images:hover .image-menu{
+    visibility: visible;
 }
 
 
@@ -592,6 +628,10 @@ li a:hover{
     border: 1px solid rgb(37, 37, 89);
     color: rgb(37, 37, 89);
     transition: 1s;
+}
+
+.services-list-individual:hover .service-heading{
+    color: rgb(134, 134, 148);
 }
 
 
