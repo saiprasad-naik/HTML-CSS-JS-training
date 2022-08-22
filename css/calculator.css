@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins-bold', sans-serif !important;
+}
+
+body{
+    background-color: #004369;
+    height: 100vh;
+    width: 100%;
+}
+ h2{
+    color: 
+    #E5DDC8;
+    margin: 2em 0;
+    text-align: center;
+ }
+
+ .container{
+    width: 30%;
+    padding: 2em;
+    margin: 2em auto;
+    background-color: #01949A;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ }
+
+ .textarea{
+    width: 100%;
+    background-color: #E5DDC8;
+    height: 15vh;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: rgba(45, 46, 47, 0.497) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    font-size: 2rem;
+ }
+
+ .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0 0 0;
+ }
+
+ .calc-btns{
+    width: 110px;
+    padding: 1.3em;
+    height: 2vh;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#E5DDC8 ;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-size: 1.5rem;
+ }
+

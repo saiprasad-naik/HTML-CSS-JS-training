@@ -1,11 +1,30 @@
 
-
         AOS.init({
         offset: 200,
         duration: 1000
         }
     );
 
+    
+//----------------------------------------------------------------------------------------- Typewriter
+    var app = document.getElementById('typeWriterText');
+
+    var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+    });
+    
+    typewriter
+        .pauseFor(2500)
+        .typeString(' Im a <span class="typeUnderline"> Developer ....</span> ')
+        .pauseFor(300)
+        .deleteChars(15)
+        .typeString('<span class="typeUnderline"> Designer !</span>')
+        // .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+        .pauseFor(1000)
+        .start();
+    
+// ------------------------------------------------------------------------------------------------------------------
         var mybutton = document.getElementById("top-btn");
 
         window.onscroll = function() {scrollFunction()};
