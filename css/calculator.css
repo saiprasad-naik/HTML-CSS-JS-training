@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+@font-face{
+   font-family:'digital-clock-font';
+   src: url('put_the_location_to_your_font.ttf or .otf');
+  }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins-bold', sans-serif !important;
+    
 }
 
 body{
-    background-color: #004369;
+    background-color: black;
     height: 100vh;
     width: 100%;
 }
  h2{
+   font-family: 'Orbitron', sans-serif;
     color: 
     #E5DDC8;
     margin: 2em 0;
@@ -20,22 +25,35 @@ body{
  }
 
  .container{
-    width: 30%;
+    width: 380px;
     padding: 2em;
     margin: 2em auto;
-    background-color: #01949A;
-    border-radius: 10px;
+    background-color: #282828;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
  }
 
  .textarea{
     width: 100%;
-    background-color: #E5DDC8;
-    height: 15vh;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: rgba(45, 46, 47, 0.497) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    font-size: 2rem;
+    height: 10vh;
+    padding: .3em;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px 0px, rgba(82, 82, 82, 0.376) -3px -3px 6px 0px;
+ }
+
+ #text-field{
+   background-color: #638452;
+   font-family: 'Orbitron', sans-serif;
+   height: 100%;
+   width: 100%;
+   border: none;
+   outline: none;
+   text-align: right;
+   font-weight: bold;
+   border-radius: 10px;
+   padding: .5em;
+   font-size: 1.5rem;
+   box-shadow: rgb(6, 30, 14) 3px 3px 6px 0px inset, rgb(162, 162, 162) -3px -3px 6px 0px inset;
  }
 
  .buttons{
@@ -48,17 +66,46 @@ body{
  }
 
  .calc-btns{
-    width: 110px;
-    padding: 1.3em;
-    height: 2vh;
+    padding: 1em;
+    width: 3em;
     border-radius: 10px;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#E5DDC8 ;
+    background-color:#282828 ;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px 0px, rgba(82, 82, 82, 0.376) -3px -3px 6px 0px;
+   color: white;
+    font-size: 1.2rem;
  }
 
+ .calc-btns:hover{
+   background-color:#212121 ;
+ }
+
+.green{
+   color: #33f3b0;
+}
+
+.gold{
+   color: #EC994B;
+}
+
+.zero{
+   width: 45%;
+}
+
+@media screen and (max-width:480px) {
+   .container{
+      width: 90%;
+   }
+
+   .calc-btns{
+      width: 2.5em;
+   }
+
+   .zero{
+      width: 45%;
+   }
+}
