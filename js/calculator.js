@@ -5,17 +5,18 @@ var displayValue = ' ';
 for (item of buttons){
     item.addEventListener('click', (e)=>{
         buttonVal = e.target.innerText;
-        if(buttonVal=='X'){
-            buttonVal = "*";
-            displayValue += buttonVal;
-            display.value = displayValue;
-        }
-        else if(buttonVal=='AC'){
+
+        if(buttonVal=='AC'){
             displayValue = " ";
             display.value = displayValue;
         }
         else if(buttonVal=='='){
             display.value = eval(displayValue);
+        }
+        else if(buttonVal=='BCK'){
+            temp = display.value.slice(0,-1)
+            displayValue = temp            
+            display.value = temp
         }
         else{
             displayValue += buttonVal;
