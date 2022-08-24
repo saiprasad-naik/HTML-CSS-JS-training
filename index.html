@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />    
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/indexstyle.css">
     <title>Saiprasad Naik - Portfolio</title>
 </head>
 <body>
@@ -327,10 +329,10 @@
             
             <div class="portfolio-categories" data-aos="fade-up">
                 <ul>
-                    <li onclick="showall()">ALL</li>
-                    <li onclick="showapp()">APP</li>
-                    <li onclick="showcard()">CARD</li>
-                    <li onclick="showweb()">WEB</li>
+                    <li onclick="showall()" class="alllink active1">ALL</li>
+                    <li onclick="showapp()"  class="applink">APP</li>
+                    <li onclick="showcard()"  class="cardlink">CARD</li>
+                    <li onclick="showweb()" class="weblink" >WEB</li>
                 </ul>
             </div>
 
@@ -454,8 +456,41 @@
             <div class="underline"></div>
             <p class="headingp"></p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum officiis sequi atque dolorem tempora Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, id?  ducimus magnam ullam, laboriosam n4</p>
 
-            <div class="testimonial-container">
-                <div class="testimonial-container-main">
+            <div class=" slider-container swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide testimonial-container-main">
+                      <div class="individual-testimonial">
+                          <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+                      </div>
+                      <img class="testimonial-pic" src="./images/pex.jpg" alt="">
+                      <p class="testimonial-name">Gavin Pereira</p>
+                      <p class="testimonial-designation">Store Owner</p>
+                  </div>
+                  <div class="testimonial-container-main swiper-slide">
+                      <div class="individual-testimonial">
+                          <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+                      </div>
+                      <img class="testimonial-pic" src="./images/andrick.jpg" alt="">
+                      <p class="testimonial-name">Andrick Silva</p>
+                      <p class="testimonial-designation">Freelancer</p>
+                  </div>
+                  <div class="testimonial-container-main swiper-slide">
+                      <div class="individual-testimonial">
+                          <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+                      </div>
+                      <img class="testimonial-pic" src="./images/arron.jpg" alt="">
+                      <p class="testimonial-name">Aaron Vaz</p>
+                      <p class="testimonial-designation">Engineer</p>
+                  </div>
+                  <div class="testimonial-container-main swiper-slide">
+                      <div class="individual-testimonial">
+                          <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+                      </div>
+                      <img class="testimonial-pic" src="./images/arron.jpg" alt="">
+                      <p class="testimonial-name">Aaron Vaz</p>
+                      <p class="testimonial-designation">Engineer</p>
+                  </div>
+                  <div class="swiper-slide testimonial-container-main">
                     <div class="individual-testimonial">
                         <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
                     </div>
@@ -463,7 +498,7 @@
                     <p class="testimonial-name">Gavin Pereira</p>
                     <p class="testimonial-designation">Store Owner</p>
                 </div>
-                <div class="testimonial-container-main">
+                <div class="testimonial-container-main swiper-slide">
                     <div class="individual-testimonial">
                         <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
                     </div>
@@ -471,7 +506,7 @@
                     <p class="testimonial-name">Andrick Silva</p>
                     <p class="testimonial-designation">Freelancer</p>
                 </div>
-                <div class="testimonial-container-main">
+                <div class="testimonial-container-main swiper-slide">
                     <div class="individual-testimonial">
                         <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
                     </div>
@@ -479,10 +514,35 @@
                     <p class="testimonial-name">Aaron Vaz</p>
                     <p class="testimonial-designation">Engineer</p>
                 </div>
-                
-            </div>
-
-
+                <div class="swiper-slide testimonial-container-main">
+                    <div class="individual-testimonial">
+                        <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+                    </div>
+                    <img class="testimonial-pic" src="./images/pex.jpg" alt="">
+                    <p class="testimonial-name">Gavin Pereira</p>
+                    <p class="testimonial-designation">Store Owner</p>
+                </div>
+                <div class="testimonial-container-main swiper-slide">
+                    <div class="individual-testimonial">
+                        <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+                    </div>
+                    <img class="testimonial-pic" src="./images/andrick.jpg" alt="">
+                    <p class="testimonial-name">Andrick Silva</p>
+                    <p class="testimonial-designation">Freelancer</p>
+                </div>
+                <div class="testimonial-container-main swiper-slide">
+                    <div class="individual-testimonial">
+                        <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+                    </div>
+                    <img class="testimonial-pic" src="./images/arron.jpg" alt="">
+                    <p class="testimonial-name">Aaron Vaz</p>
+                    <p class="testimonial-designation">Engineer</p>
+                </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
         </div>
 
 <!-- ---------------------------------------------------------contact-section----------------------------------------------------------------- ---------- -->
@@ -553,8 +613,20 @@
            <p class="end1"> Designed by <span class="name">Saiprasad Naik!</span></p>
        </div>
     </section>
+
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>  <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper(...)
+    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>  
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+
 </body>
 </html>

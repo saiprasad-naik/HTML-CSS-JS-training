@@ -58,20 +58,60 @@
         var logos = document.querySelectorAll(".logo");
         var all = document.querySelectorAll(".all");
 
+
+
         function showweb(){
             all.forEach(img=>img.parentNode.style.display='none')
             websites.forEach(img=>img.parentNode.style.display='inline ')
+
+            document.querySelector('.portfolio-categories li.active1').classList.remove('active1')
+            document.querySelector('.portfolio-categories li.weblink').classList.add('active1')
+
         }
 
         function showcard(){
             all.forEach(img=>img.parentNode.style.display='none')
-            card.forEach(img=>img.parentNode.style.display='block ')
+            card.forEach(img=>img.parentNode.style.display='flex '); document.querySelector('.portfolio-categories li.active1').classList.remove('active1')
+            document.querySelector('.portfolio-categories li.cardlink').classList.add('active1')
         }
 
         function showapp(){
-            all.forEach(img=>img.parentNode.style.display='none')
+            all.forEach(img=>img.parentNode.style.display='none'); document.querySelector('.portfolio-categories li.active1').classList.remove('active1')
+            document.querySelector('.portfolio-categories li.applink').classList.add('active1')
         }
 
         function showall(){
-            all.forEach(img=>img.parentNode.style.display='block')
+            all.forEach(img=>img.parentNode.style.display='flex'); document.querySelector('.portfolio-categories li.active1').classList.remove('active1')
+            document.querySelector('.portfolio-categories li.alllink').classList.add('active1')
+
         }
+
+        var swiper = new Swiper(".slider-container", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            centerSlide: "true",
+            fade: "true",
+            grabCursor: "true",
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              dynamicBullets: 'true',
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints:{
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+          });

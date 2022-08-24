@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/indexstyle.css">
+
+    <!-- Demo styles -->
+    <style>
+
+      .testimonials {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .slider-container{
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-wrapper{
+        padding-bottom: 3em;
+      }
+
+      .swiper-pagination{
+        margin-top: 6em;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class=" slider-container swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimonial-container-main">
+            <div class="individual-testimonial">
+                <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+            </div>
+            <img class="testimonial-pic" src="./images/pex.jpg" alt="">
+            <p class="testimonial-name">Gavin Pereira</p>
+            <p class="testimonial-designation">Store Owner</p>
+        </div>
+        <div class="testimonial-container-main swiper-slide">
+            <div class="individual-testimonial">
+                <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+            </div>
+            <img class="testimonial-pic" src="./images/andrick.jpg" alt="">
+            <p class="testimonial-name">Andrick Silva</p>
+            <p class="testimonial-designation">Freelancer</p>
+        </div>
+        <div class="testimonial-container-main swiper-slide">
+            <div class="individual-testimonial">
+                <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+            </div>
+            <img class="testimonial-pic" src="./images/arron.jpg" alt="">
+            <p class="testimonial-name">Aaron Vaz</p>
+            <p class="testimonial-designation">Engineer</p>
+        </div>
+        <div class="testimonial-container-main swiper-slide">
+            <div class="individual-testimonial">
+                <div class="individual-testimonial-message"><p><i class="fa-solid fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ratione itaque doloribus vero dolorem exercitationem animi numquam aperiam esse ut. <i class="fa-solid fa-quote-right"></i></p></div>
+            </div>
+            <img class="testimonial-pic" src="./images/arron.jpg" alt="">
+            <p class="testimonial-name">Aaron Vaz</p>
+            <p class="testimonial-designation">Engineer</p>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

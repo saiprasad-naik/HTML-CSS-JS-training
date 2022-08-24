@@ -555,9 +555,11 @@ li a:hover{
 
 .individual-portfolio-images{
     position: relative;
-    padding: 1em .2em 0 0;
+    padding: 1em 0 0 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
 }
 
 .image-menu{
@@ -568,11 +570,11 @@ li a:hover{
     justify-content: space-between;
     background-color: rgb(37, 37, 89);
     position: absolute;
-    bottom: 0;
+    bottom: -15%;
     left: 0;
     visibility: hidden;
     color: white;
-    transition: 2s;
+    transition: all .6s;
 }
 
 /* .image-menu{
@@ -593,18 +595,29 @@ li a:hover{
     cursor: pointer;
 }
 
+.individual-portfolio-images img{
+    min-width: 400px;
+    padding: 0;
+}
+
 .individual-portfolio-images:hover img{
     opacity: 0.5;
 }
 
 .individual-portfolio-images:hover .image-menu{
     visibility: visible;
+    bottom: 0;
 }
 
+.portfolio-categories li.active1{
+    color: rgb(170, 189, 245);
+}
 
 /* ---------------------------------------------------------services-section----------------------------------------------------------------- */
 
-
+.services{
+    padding-bottom: 3em;
+}
 .services-list{
     display: flex;
     flex-wrap: wrap;
@@ -654,12 +667,9 @@ li a:hover{
 
 /* ---------------------------------------------------------testimonial-section----------------------------------------------------------------- */
 
-.testimonial-container{
-    margin: 2em 1em;
+.swiper-wrapper{
+    margin: 2em 0;
     display: flex;
-    gap: 1.5em;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .testimonial-container-main{
@@ -702,6 +712,7 @@ li a:hover{
     font-style: italic;
     color: rgba(37, 37, 89, 0.601);
 }
+
 
 
 /* ---------------------------------------------------------contact-section----------------------------------------------------------------- */
@@ -859,7 +870,7 @@ button:hover{
     border-radius: 50%;
     text-align: center;
     font-size: .8rem;
-    z-index: 0;
+    z-index: 20;
 }
 
 #screen-menu-btn, #screen-menu-btn1{
@@ -873,7 +884,7 @@ button:hover{
     border-radius: 50%;
     text-align: center;
     font-size: .8rem;
-    z-index: 0;
+    z-index: 20;
     display: none;
 }
 
@@ -890,7 +901,6 @@ button:hover{
 
     .portfolio-images img{
         width: 300px;
-        padding: 1em .2em .5em 0;
     }
 
     #screen-menu-btn{
@@ -1002,6 +1012,10 @@ button:hover{
 
     .testimonial-container-main{
         width: 600px;
+    }
+
+    .services, .testimonials{
+         padding-bottom: em;
     }
 
     .individual-testimonial{
@@ -1132,11 +1146,19 @@ button:hover{
         padding: 0;
     }
 
+    .services, .testimonials{
+        padding-bottom: 3em;
+   }
+
     .services-list-individual{
         align-items: flex-start;
         justify-content: space-between;
         max-width: 95%;
         gap: 1em;
+    }
+
+    .swiper-wrapper{
+        /* flex-direction: column; */
     }
 
     .form-inputs{
