@@ -664,6 +664,7 @@ li a:hover{
 .swiper-wrapper{
     margin: 2em 0;
     display: flex;
+    padding: 1.2em;
 }
 
 .testimonial-container-main{
@@ -1035,6 +1036,10 @@ button:hover{
 
     .individual-testimonial{
         width: 100%;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
     }
 
     .contact-rows{
