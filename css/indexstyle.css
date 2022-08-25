@@ -681,10 +681,16 @@ li a:hover{
     width: 100%;
     background-color: white;
     border-radius: 5px;
+    height: 30vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .individual-testimonial-message p{
     text-align: center;
     color: rgba(10, 10, 20, 0.603);
+    text-overflow: ellipsis;
 }
 .individual-testimonial-message p i{
     font-size: 1.5rem;
