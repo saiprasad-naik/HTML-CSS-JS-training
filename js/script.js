@@ -25,6 +25,13 @@
         .start();
     
 // ------------------------------------------------------------------------------------------------------------------
+        
+        var loader = document.querySelector('.preload');
+
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+        })
+
         var mybutton = document.getElementById("top-btn");
 
         window.onscroll = function() {scrollFunction()};
