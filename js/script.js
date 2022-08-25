@@ -26,7 +26,7 @@
     
 // ------------------------------------------------------------------------------------------------------------------
         
-        var loader = document.querySelector('.preload');
+        var loader = document.getElementById('preload');
 
         window.addEventListener("load", function(){
             loader.style.display="none";
