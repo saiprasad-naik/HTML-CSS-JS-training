@@ -865,6 +865,19 @@ button:hover{
     text-align: center;
     font-size: .8rem;
     z-index: 20;
+    animation: jump 1s infinite;
+}
+
+@keyframes jump {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 #screen-menu-btn, #screen-menu-btn1{
